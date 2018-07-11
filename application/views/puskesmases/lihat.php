@@ -5,7 +5,7 @@
 				<h1 class="title">
 					{{ puskesmas.nama_Puskesmas }}
 				</h1>
-				<p class="subtitle">Informas Lengkap</p>
+				<p class="subtitle">Informasi Lengkap</p>
 			</div>
 		</div>
 	</section>

@@ -5,7 +5,7 @@
 				<h1 class="title">
 					RS {{ rsk.nama_rsk }}
 				</h1>
-				<p class="subtitle">Informas Lengkap</p>
+				<p class="subtitle">Informasi Lengkap</p>
 			</div>
 		</div>
 	</section>
@@ -106,7 +106,7 @@ const rsk = new Vue({
 
 					} else {
 						this.rsk = res.data.data[0]
-						document.title = this.rsk.nama_rsk + ' | Sehat Yuk'
+						document.title = 'RS ' + this.rsk.nama_rsk + ' | Sehat Yuk'
 						this.loading = false
 					}
 				})
