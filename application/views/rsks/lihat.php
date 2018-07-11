@@ -45,9 +45,11 @@
 					</div>
 
 					<div class="field">
-						<label class="label">Telpon</label>
+						<label class="label">Telepon</label>
 						<div class="control">
-							<div class="tags">
+							<span v-if="rsk.telepon[0] === ''">-</span>
+
+							<div class="tags" v-if="rsk.telepon[0] != ''">
 								<span class="tag is-medium is-rounded" v-for="(t, index) in rsk.telepon">{{ t }}</span>
 							</div>
 						</div>
@@ -56,7 +58,9 @@
 					<div class="field">
 						<label class="label">Fax</label>
 						<div class="control">
-							<div class="tags">
+							<span v-if="rsk.faximile[0] === ''">-</span>
+
+							<div class="tags" v-if="rsk.faximile[0] != ''">
 								<span class="tag is-medium is-rounded" v-for="(f, index) in rsk.faximile">{{ f }}</span>
 							</div>
 						</div>

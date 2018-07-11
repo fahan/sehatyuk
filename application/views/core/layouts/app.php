@@ -21,6 +21,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 	<script src="<?= base_url('assets/js/wow.min.js'); ?>"></script>
+
+	<style>
+		html {
+			overflow: auto;
+		}
+	</style>
 </head>
 <body>
 	<?php

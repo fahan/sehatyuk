@@ -34,7 +34,7 @@
 					</div>
 
 					<div class="field">
-						<label class="label">Telpon</label>
+						<label class="label">Telepon</label>
 						<div class="control">
 							<div class="tags">
 								<span class="tag is-medium is-rounded" v-for="(t, index) in puskesmas.telepon">{{ t }}</span>

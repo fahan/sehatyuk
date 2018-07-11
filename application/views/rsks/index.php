@@ -10,7 +10,7 @@
 		</div>
 	</section>
 
-	<div class="columns">
+	<div class="columns is-mobile">
 		<div class="column is-10 is-offset-1">
 			<div class="has-text-centered" v-if="loading">
 				<i class="fas fa-spin fa-spinner title"></i>
