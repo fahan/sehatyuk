@@ -11,6 +11,7 @@ class Site extends CI_Controller {
 		$data = [
 			'title' => 'Selamat datang di Sehat Yuk',
 			'navigation' => $this->navigation,
+			'menu' => 'home',
 			'page' => 'sites/index'
 		];
 

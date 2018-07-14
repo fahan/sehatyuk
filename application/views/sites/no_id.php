@@ -1,3 +1,7 @@
+<?php
+defined('BASEPATH') OR exit('No direct script access allowed');
+?>
+
 <section class="hero is-light is-fullheight">
 	<div class="hero-body">
 		<div class="container has-text-centered">

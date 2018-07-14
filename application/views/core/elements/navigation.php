@@ -3,13 +3,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 ?>
 
 <div id="app">
-	<nav class="navbar is-fixed-top is-light" role="navigation" aria-label="main navigation">
+	<nav class="navbar is-fixed-top is-danger" role="navigation" aria-label="main navigation">
 		<div class="navbar-brand">
-			<a class="navbar-item wow slideInLeft" href="<?= base_url('site') ?>" data-wow-duration="1s">
+			<a class="navbar-item wow slideInLeft" href="<?= base_url('home') ?>" data-wow-duration="1s">
 				SEHAT YUK
 			</a>
 
-			<a role="button" class="navbar-burger" :class="{ 'is-active': isActive }" aria-label="menu" aria-expanded="false" @click="switchMenu">
+			<a role="button" class="navbar-burger has-text-white" :class="{ 'is-active': isActive }" aria-label="menu" aria-expanded="false" @click="switchMenu">
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
 				<span aria-hidden="true"></span>
@@ -33,6 +33,13 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 			</div>
 
 			<div class="navbar-end">
+				<a
+					class="navbar-item wow slideInDown <?= (isset($menu) && $menu === 'home' ? 'is-active' : ''); ?>"
+					href="<?= base_url('home') ?>"
+					data-wow-duration="1s"
+					data-wow-delay="0.4s"
+				>Beranda</a>
+
 				<a
 					class="navbar-item wow slideInDown <?= (isset($menu) && $menu === 'puskesmas' ? 'is-active' : ''); ?>"
 					href="<?= base_url('puskesmas') ?>"

@@ -53,6 +53,7 @@ $route['default_controller'] = 'site';
 $route['404_override'] = 'site/notFound';
 $route['translate_uri_dashes'] = FALSE;
 
+$route['home'] = 'site/index';
 $route['puskesmas'] = 'site/puskesmas';
 $route['rsk'] = 'site/rumahSakitKhusus';
 $route['rsu'] = 'site/rumahSakitUmum';

@@ -20,11 +20,20 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<script src="https://unpkg.com/vue@2.5.16/dist/vue.min.js"></script>
 	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 	<script src="<?= base_url('assets/js/wow.min.js'); ?>"></script>
 
 	<style>
 		html {
 			overflow: auto;
+		}
+
+		#btnToTop {
+			display: none;
+			position: fixed;
+			z-index: 99;
+			bottom: 20px;
+			right: 30px;
 		}
 	</style>
 </head>
@@ -37,7 +46,32 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	
 	<?php $this->load->view($page) ?>
 
+	<button id="btnToTop" class="button is-dark is-large">
+		<i class="fas fa-chevron-circle-up"></i>
+	</button>
+
 	<script>
+	window.onscroll = () => backToTop()
+
+	function backToTop () {
+		let body = $('body')
+
+		if (body.scrollTop() > 800) {
+			$('#btnToTop').show()
+		
+		} else {
+			$('#btnToTop').hide()
+		}
+	}
+
+
+	$('#btnToTop').click(() => {
+		$('html, body').animate(
+			{ scrollTop: 0 },
+			'slow'
+		)
+	})
+
 	wow = new WOW({}).init();
 	</script>
 </body>
