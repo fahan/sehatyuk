@@ -1,23 +1,24 @@
 # Sehat Yuk
 Temukan instansi kesehatan di daerah DKI Jakarta
 
-## Tools
+## Alat yang Digunakan
 1. PHP - CodeIgniter `3.1.9`
-2. CSS - Bulma and animate.css
-3. JavaScript - Vue.js `2.5.16` and Wow.js
-4. API dari Jakarta Smart City
+2. CSS - Bulma dan animate.css
+3. Font - Font Awesome `5.1.0`
+4. JavaScript - Vue.js `2.5.16`, jQuery `3.3.1`, dan Wow.js
+5. API dari Jakarta Smart City `Data Rumah Sakit Umum` `Data Rumah Sakit Khusus` `Data Puskesmas`
 
-## Installation
-1. Clone atau Download Project ini
-2. Jika Download, ubah nama Project ke `sehatyuk` dan pindahkan ke `xampp/htdocs`, `var/www/html` atau sejenisnya
-3. Buka file `application/controllers/Api.php`
+## Cara Pemasangan
+1. Kloning atau Unduh Proyek ini
+2. Jika Unduh, ubah nama Proyek ke `sehatyuk` dan pindahkan ke `xampp/htdocs`, `var/www/html` atau sejenisnya
+3. Buka berkas `application/controllers/Api.php`
 4. Ubah `API_KEY` menjadi `API_KEY Milik Anda`
 
-## How To Get API_KEY?
+## Cara Mendapatkan API_KEY
 Silahkan Kunjungi [Jakarta Smart City](http://api.jakarta.go.id/)
 
-## How To Run?
+## Cara Menjalankan
 Silahkan Kunjungi `http://localhost/sehatyuk`
 
-## License
+## Lisensi
 [MIT](https://github.com/andriannus/sehatyuk/blob/master/LICENSE)
