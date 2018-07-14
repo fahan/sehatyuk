@@ -9,7 +9,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="title">
 					Daftar Puskesmas
 				</h1>
-				<p class="subtitle">Ada {{ count }} Puskesmas di DKI Jakarta</p>
+				<p class="subtitle" v-if="loading">
+					<i class="fas fa-spin fa-spinner title"></i>
+				</p>
+				<p class="subtitle" v-if="!loading">Ada {{ count }} Puskesmas di DKI Jakarta</p>
 			</div>
 		</div>
 	</section>

@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				Halaman Tidak Ditemukan
 			</p>
 
-			<a class="button is-rounded wow zoomIn" href="<?= base_url('site') ?>" data-wow-duration="1s" data-wow-delay="0.4s">
+			<a class="button is-rounded wow zoomIn" href="<?= base_url('home') ?>" data-wow-duration="1s" data-wow-delay="0.4s">
 				Beranda
 			</a>
 

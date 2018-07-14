@@ -9,7 +9,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="title">
 					Daftar Rumah Sakit Umum
 				</h1>
-				<p class="subtitle">Ada {{ count }} RS Umum di DKI Jakarta</p>
+				<p class="subtitle" v-if="loading">
+					<i class="fas fa-spin fa-spinner title"></i>
+				</p>
+				<p class="subtitle" v-if="!loading">Ada {{ count }} RS Umum di DKI Jakarta</p>
 			</div>
 		</div>
 	</section>
@@ -86,7 +89,7 @@ const rsu = new Vue({
 			axios.get('<?= base_url() ?>' + 'api/getRumahSakitUmum')
 				.then(res => {
 					this.rsus = res.data.data
-					this.length = res.data.data.length
+					this.count = res.data.data.length
 					this.fetchData()
 					this.loading = false
 				})

@@ -27,7 +27,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 						<div class="field">
 							<label class="label">Alamat</label>
 							<div class="control">
-								<span>{{ puskesmas.location.alamat }}</span>
+								<p>{{ puskesmas.location.alamat }}</p>
+								<span>
+									<button class="button is-danger" @click="showMap">Lihat Peta</button>
+								</span>
 							</div>
 						</div>
 
@@ -113,6 +116,12 @@ const puskesmas = new Vue({
 				.catch(err => {
 					alert('Terjadi error. Silahkan refresh halaman atau coba lagi nanti.')
 				})
+		},
+
+		showMap () {
+			let center = this.puskesmas.location.latitude + ',' + this.puskesmas.location.longitude
+			let url = 'https://www.google.com/maps/search/?api=1&query=' + center
+			window.open(url, '_blank')
 		}
 	}
 })

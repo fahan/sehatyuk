@@ -9,7 +9,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<h1 class="title">
 					Daftar Rumah Sakit Khusus
 				</h1>
-				<p class="subtitle">Ada {{ count }} RS Khusus di DKI Jakarta</p>
+				<p class="subtitle" v-if="loading">
+					<i class="fas fa-spin fa-spinner title"></i>
+				</p>
+				<p class="subtitle" v-if="!loading">Ada {{ count }} RS Khusus di DKI Jakarta</p>
 			</div>
 		</div>
 	</section>
